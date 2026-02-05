@@ -5,26 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Тестовое задание </title>
     <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap">
 </head>
+
 <body>
     <nav class="navbar" id="navbar">
-        <ul>
-            <img src="ui-components/Logo.png" alt="logo"/>
-            <li><a>Каталог</a></li>
-            <li><a>Карточка</a></li>
-            <li><a>Меню 3</a></li>
-            <li><a>Меню 4</a></li>
-            <button class="nav-button">Купить <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M16 30.6666C7.89986 30.6666 1.33337 24.1001 1.33337 15.9999C1.33337 7.89974 7.89986 1.33325 16 1.33325C24.1002 1.33325 30.6667 7.89974 30.6667 15.9999C30.6667 24.1001 24.1002 30.6666 16 30.6666ZM16 27.9999C22.6275 27.9999 28 22.6273 28 15.9999C28 9.3725 22.6275 3.99992 16 3.99992C9.37262 3.99992 4.00004 9.3725 4.00004 15.9999C4.00004 22.6273 9.37262 27.9999 16 27.9999ZM14.2762 9.72378L12.3906 11.6094L16.7811 15.9999L12.3906 20.3904L14.2762 22.2761L20.5523 15.9999L14.2762 9.72378Z" fill="#283C63"/>
-</svg>
-</button>
-        </ul>
+        <div class="nav-inner">
+            <div class="nav-logo">
+                <img src="ui-components/Logo.png" alt="logo" />
+            </div>
+
+            <ul class="nav-menu">
+                <li><a>Каталог</a></li>
+                <li><a>Карточка</a></li>
+                <li><a>Меню 3</a></li>
+                <li><a>Меню 4</a></li>
+            </ul>
+
+            <div class="nav-action">
+                <button class="nav-button"> Купить
+                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M16 30.6666C7.89986 30.6666 1.33337 24.1001 1.33337 15.9999C1.33337 7.89974 7.89986 1.33325 16 1.33325C24.1002 1.33325 30.6667 7.89974 30.6667 15.9999C30.6667 24.1001 24.1002 30.6666 16 30.6666ZM16 27.9999C22.6275 27.9999 28 22.6273 28 15.9999C28 9.3725 22.6275 3.99992 16 3.99992C9.37262 3.99992 4.00004 9.3725 4.00004 15.9999C4.00004 22.6273 9.37262 27.9999 16 27.9999ZM14.2762 9.72378L12.3906 11.6094L16.7811 15.9999L12.3906 20.3904L14.2762 22.2761L20.5523 15.9999L14.2762 9.72378Z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
     </nav>
-    <section>
-        <div>
+
+    <section class="hero-section">
+        <div class="hero-inner">
             <img src="ui-components/Banner.png" alt="banner"/>
-            <h1>Заголовок страницы</h1>
+            <h1 class="hero-title">Заголовок страницы</h1>
         </div>
     </section>
     <section class="slider">
