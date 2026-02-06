@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Тестовое задание </title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;600;700&display=swap">
 </head>
 
 <body>
@@ -14,14 +14,12 @@
             <div class="nav-logo">
                 <img src="ui-components/Logo.png" alt="logo" />
             </div>
-
             <ul class="nav-menu">
-                <li><a>Каталог</a></li>
-                <li><a>Карточка</a></li>
-                <li><a>Меню 3</a></li>
-                <li><a>Меню 4</a></li>
+                    <li><a>Каталог</a></li>
+                    <li><a>Карточка</a></li>
+                    <li><a>Меню 3</a></li>
+                    <li><a>Меню 4</a></li>
             </ul>
-
             <div class="nav-action">
                 <button class="nav-button"> Купить
                     <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -40,30 +38,54 @@
         </div>
     </section>
     <section class="slider">
-        <img src="ui-components/arrow1.png" alt="right-button"/>
-        <img src="ui-components/arrow1.png" alt="left-button"/>
-        <div class="rectangle"></div>
-        <div class="rectangle"></div>
-        <div class="rectangle"></div>
-        <div class="rectangle"></div>
+        <div class="slider-arrow">
+            <img class="slider-arrow slider-arrow-left" src="ui-components/arrow-left.svg" alt="left-button"/>
+            <img class="slider-arrow slider-arrow-right" src="ui-components/arrow-right.svg" alt="right-button"/>
+        </div>
+        <div class="rectangle-section">
+            <div class="rectangle">
+                <img class="rectangle-photo" src="ui-components/photo.png" alt="photo"/>
+                <div class="rectangle-background"></div>
+            </div>
+            <div class="rectangle">
+                <img class="rectangle-photo" src="ui-components/photo.png" alt="photo"/>
+                <div class="rectangle-background"></div>
+            </div>
+            <div class="rectangle">
+                <img class="rectangle-photo" src="ui-components/photo.png" alt="photo"/>
+                <div class="rectangle-background"></div>
+            </div>
+            <div class="rectangle">
+                <img class="rectangle-photo" src="ui-components/photo.png" alt="photo"/>
+                <div class="rectangle-background"></div>
+            </div>
+        </div>    
     </section>
     <footer>
-        <img src="ui-components/Logo.png" alt="logo"/>
-        <ul>
-            <li><a href="#welcome-section">Номер</a></li>
-            <li><a href="#project-section">Емейл</a></li>
-            <li><a href="#contact">Ссылка в подвале 1</a></li>
-            <li><a href="#contact">Ссылка в подвале 2</a></li>
-            <li><a href="#contact">Ссылка в подвале 3</a></li>
-            <li><a href="#contact">Ссылка в подвале 4</a></li>
-            <li><a href="#contact">Ссылка в подвале 5</a></li>
-            <li><a href="#contact">Ссылка в подвале 6</a></li>
-            <li><a href="#contact">Ссылка в подвале 7</a></li>
-            <li><a href="#contact">Ссылка в подвале 8</a></li>
-            <li><a href="#contact">Ссылка в подвале 9</a></li>
-            <li><a href="#contact">Ссылка в подвале 10</a></li>
-            <li><a href="#contact">Ссылка в подвале 11</a></li>
-        </ul>
+        <div class="footer-left">
+            <img src="ui-components/Logo.png" alt="logo"/>
+            <a class="footer-number" href="#welcome-section">8-800-555-35-35</a>
+            <a class="footer-email" href="#project-section">test@mail.com</a>
+        </div>
+        <div class="footer-col">
+            <a href="#contact">Ссылка в подвале</a>
+            <a href="#contact">Ссылка в подвале</a>
+            <a href="#contact">Ссылка в подвале</a>
+            <a href="#contact">Ссылка в подвале</a>
+        </div>
+        <div class="footer-col">
+            <a href="#contact">Ссылка в подвале</a>
+            <a href="#contact">Ссылка в подвале</a>
+            <a href="#contact">Ссылка в подвале</a>
+            <a href="#contact">Ссылка в подвале</a>
+        </div>
+        <div class="footer-col">
+            <a href="#contact">Ссылка в подвале</a>
+            <a href="#contact">Ссылка в подвале</a>
+            <a href="#contact">Ссылка в подвале</a>
+        </div>
     </footer>
+    <div class="line">
+    </div>
 </body>
 </html>
