@@ -10,15 +10,20 @@ body {
   color: #000;
 }
 
+/* Шапка сайта (navbar) */
+
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  height:80px;
   background: #fff;
   box-shadow: 0px 10px 25px 0px #0000002B;
   z-index: 1000;
 }
+
+/* Внутренний контейнер шапки */
 
 .nav-inner {
     max-width: 1350px;
@@ -26,14 +31,18 @@ body {
     height: 80px;
     display: flex;
     align-items: center;
-  justify-content: space-between;
-  padding: 10px 0px;
+    justify-content: space-between;
+    height:80px;
 }
+
+/* Логотип в шапке */
 
 .nav-logo img {
   width: 190px;
   height: 40px;
 }
+
+/* Главное меню навигации */
 
 .nav-menu {
   display: flex;
@@ -48,6 +57,33 @@ body {
   margin: 0 auto;
 }
 
+/* Ссылки меню и анимация фиолетовой полоски при наведении */
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  width: 100%;
+  height: 4px;
+  background: #a683ff;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/* Отступы логотипа и блока с кнопкой */
+
 .nav-logo {
   padding-left: 30px;
 }
@@ -56,6 +92,8 @@ body {
     padding-right: 28px;
     margin-left: auto;
 }
+
+/* Кнопка «Купить» в шапке */
 
 .nav-button {
   all: unset;
@@ -81,11 +119,15 @@ body {
   flex-shrink: 0;
 }
 
+/* Блок с баннером (Заголовок страницы) */
+
 .hero-section {
     display: flex;
     justify-content: center;
-    padding: 132px 30px 150px 30px;
+    padding: 113px 30px 150px 30px;
 }
+
+/* Контейнер баннера и заголовка */
 
 .hero-inner {
     padding: 0;
@@ -102,6 +144,8 @@ body {
     border-radius:10px;
 }
 
+/* Заголовок поверх баннера */
+
 .hero-title {
     position: absolute;
     z-index: 2;
@@ -114,6 +158,8 @@ body {
   vertical-align: bottom;
   color:white;
 }
+
+/* Стрелки слайдера под баннером */
 
 .slider-arrow {
     display:flex;
@@ -129,6 +175,8 @@ body {
     color:white;
 }
 
+/* Секция с карточками (для товаров) */
+
 .rectangle-section {
     display: flex;
     align-items: center;
@@ -136,6 +184,7 @@ body {
     padding-bottom:100px;
 }
 
+/* Карточка товара */
 
 .rectangle {
     width:300px;
@@ -164,6 +213,8 @@ body {
     z-index:2;
 }
 
+/* Подвал сайта */
+
 footer {
   display: grid;
   grid-template-columns: 270px repeat(3, 1fr);
@@ -173,6 +224,8 @@ footer {
   min-height:270px;
   padding: 0px 30px;
 }
+
+/* Левая колонка подвала: логотип и контакты */
 
 .footer-left {
   display: flex;
@@ -186,6 +239,8 @@ footer {
     height:40px;
     padding-bottom:34px;
 }
+
+/* Телефон и e‑mail в подвале */
 
 .footer-number {
     font-family: Montserrat;
@@ -209,6 +264,8 @@ footer {
     color:#828282;
 }
 
+/* Колонки ссылок в подвале */
+
 .footer-col {
     margin-top:58px;
     font-family: Roboto;
@@ -221,6 +278,8 @@ footer {
     flex-direction: column;
     gap: 10px;
 }
+
+/* Нижняя фиолетовая линия под сайтом */
 
 .line {
     width:auto;
