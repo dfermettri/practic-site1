@@ -14,11 +14,19 @@
             <div class="nav-logo">
                 <img src="ui-components/Logo.png" alt="logo" />
             </div>
-            <ul class="nav-menu">
-                    <li><a class="nav-link">Каталог</a></li>
-                    <li><a class="nav-link">Карточка</a></li>
-                    <li><a class="nav-link">Меню 3</a></li>
-                    <li><a class="nav-link">Меню 4</a></li>
+            <button class="nav-burger" type="button"
+                aria-label="Открыть меню"
+                aria-controls="nav-menu"
+                aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a class="nav-link">Каталог</a></li>
+                <li><a class="nav-link">Карточка</a></li>
+                <li><a class="nav-link">Меню 3</a></li>
+                <li><a class="nav-link">Меню 4</a></li>
             </ul>
             <div class="nav-action">
                 <button class="nav-button"> Купить
@@ -31,18 +39,35 @@
         </div>
     </nav>
 
-    <section class="hero-section">
-        <div class="hero-inner">
-            <img src="ui-components/Banner.png" alt="banner"/>
-            <h1 class="hero-title">Заголовок страницы</h1>
-        </div>
+    <section class="catalog-hero-section">
+            <h1 class="catalog-title">Заголовок страницы</h1>
     </section>
-    <section class="slider">
-        <div class="slider-arrow">
-            <img class="slider-arrow slider-arrow-left" src="ui-components/arrow-left.svg" alt="left-button"/>
-            <img class="slider-arrow slider-arrow-right" src="ui-components/arrow-right.svg" alt="right-button"/>
+    
+    <section class="catalog-main-section">
+        <div class="catalog-banner">
         </div>
-        <div class="rectangle-section">
+        
+        <div class="catalog-rectangle-section">
+            <div class="rectangle">
+                <img class="rectangle-photo" src="ui-components/photo.png" alt="photo"/>
+                <div class="rectangle-background"></div>
+            </div>
+            <div class="rectangle">
+                <img class="rectangle-photo" src="ui-components/photo.png" alt="photo"/>
+                <div class="rectangle-background"></div>
+            </div>
+            <div class="rectangle">
+                <img class="rectangle-photo" src="ui-components/photo.png" alt="photo"/>
+                <div class="rectangle-background"></div>
+            </div>
+            <div class="rectangle">
+                <img class="rectangle-photo" src="ui-components/photo.png" alt="photo"/>
+                <div class="rectangle-background"></div>
+            </div>
+            <div class="rectangle">
+                <img class="rectangle-photo" src="ui-components/photo.png" alt="photo"/>
+                <div class="rectangle-background"></div>
+            </div>
             <div class="rectangle">
                 <img class="rectangle-photo" src="ui-components/photo.png" alt="photo"/>
                 <div class="rectangle-background"></div>
@@ -87,5 +112,14 @@
     </footer>
     <div class="line">
     </div>
+<script>
+  const btn = document.querySelector('.nav-burger');
+  const menu = document.querySelector('#nav-menu');
+
+  btn.addEventListener('click', () => {
+    const isOpen = menu.classList.toggle('is-open');
+    btn.setAttribute('aria-expanded', String(isOpen));
+  });
+</script>
 </body>
 </html>
